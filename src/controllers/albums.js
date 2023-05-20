@@ -95,10 +95,27 @@ const updateAlbumByPatch = async (req, res) => {
   }
 };
 
+const deleteAlbum = async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    const {
+      rows: [album],
+    } = await db.query("DELETE FROM albums WHERE id = $1 RETURNING *", [id]);
+
+    if (!album) {
+      return res.status(404).json({ message: `album ${id} does not exist` });
+    }
+    res.status(200).json(album);
+  } catch (err) {
+    res.status(500).json(err.message);
+  }
+};
 module.exports = {
   createAlbum,
   getAllAlbums,
   getAlbumById,
   updateAlbumByPut,
   updateAlbumByPatch,
+  deleteAlbum,
 };

@@ -7,5 +7,6 @@ albumRouter.get("/", albumController.getAllAlbums);
 albumRouter.get("/:id", albumController.getAlbumById);
 albumRouter.put("/:id", albumController.updateAlbumByPut);
 albumRouter.patch("/:id", albumController.updateAlbumByPatch);
+albumRouter.delete("/:id", albumController.deleteAlbum);
 
 module.exports = albumRouter;
