@@ -28,29 +28,50 @@ npm start # to start the app at http://localhost:3000
 
 <details>
 <summary><code>POST</code> <code><b>/artists</b></code> <code>add a new artist</code></summary>
+</details>
 
+<details>
 <summary><code>GET</code> <code><b>/artists</b></code> <code>find all artists</code></summary>
+</details>
 
+<details>
 <summary><code>GET</code> <code><b>/artists/{id}</b></code> <code>find an artist by ID</code></summary>
+</details>
 
+<details>
 <summary><code>PUT</code> <code><b>/artists/{id}</b></code> <code>replaces an artist with an updated record</code></summary>
+</details>
 
+<details>
 <summary><code>PATCH</code> <code><b>/artists/{id}</b></code> <code>updates an artist's record</code></summary>
+</details>
 
+<details>
 <summary><code>DELETE</code> <code><b>/artists/{id}</b></code> <code>deletes an artist</code></summary>
+</details>
 
 ### Albums
 
+<details>
 <summary><code>POST</code> <code><b>/artists/{id}/albums</b></code> <code>add a new album associated with an artist</code></summary>
+</details>
 
+<details>
 <summary><code>GET</code> <code><b>/albums</b></code> <code>find all albums</code></summary>
+</details>
 
+<details>
 <summary><code>GET</code> <code><b>/albums/{id}</b></code> <code>find an album by ID</code></summary>
+</details>
 
+<details>
 <summary><code>PUT</code> <code><b>/albums/{id}</b></code> <code>replaces an album with an updated record</code></summary>
+</details>
 
+<details>
 <summary><code>PATCH</code> <code><b>/albums/{id}</b></code> <code>updates an album's record</code></summary>
+</details>
 
+<details>
 <summary><code>DELETE</code> <code><b>/albums/{id}</b></code> <code>deletes an album</code></summary>
-
 </details>
