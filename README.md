@@ -52,3 +52,5 @@ npm start # to start the app at http://localhost:3000
 <summary><code>PATCH</code> <code><b>/albums/{id}</b></code> <code>updates an album's record</code></summary>
 
 <summary><code>DELETE</code> <code><b>/albums/{id}</b></code> <code>deletes an album</code></summary>
+
+</details>
